@@ -7,9 +7,11 @@ docker build -t python-locker .
 
 ## Step 2
 
-Before running the below docker command, make sure to replace '/home/playground/Bloom/docker-locker' with the path of the directory where you want to have the decrypted files
+Before running the below docker command, make sure to replace '/my/dir' with the path of the directory where you want to have the decrypted files
 
-docker run --name lockitup -v /home/playground/Bloom/docker-locker:/usr/src/app -ti python-locker
+docker run --name lockitup -v /my/dir:/usr/src/app -ti python-locker
+
+EXAMPLE -> docker run --name lockitup -v /home/playground/Bloom/docker-locker:/usr/src/app -ti python-locker
 
 ## Step 3
 
